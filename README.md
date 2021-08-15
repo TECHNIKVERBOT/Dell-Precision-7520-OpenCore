@@ -17,11 +17,11 @@ macOS | Big Sur
 
 ## What works?
 
-- Boot
 - to be determined
 
 ## What doesn't work?
 
+- dGPU (no support past High Sierra)
 - TrackPad
 - to be determined
 
