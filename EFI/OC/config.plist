@@ -62,6 +62,13 @@
 				<key>Path</key>
 				<string>SSDT-RHUB.aml</string>
 			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>SSDT-BRT6.aml</string>
+				<key>Enabled</key>
+				<true/>
+				<key>Path</key>
+				<string>SSDT-BRT6.aml</string>
 		</array>
 		<key>Delete</key>
 		<array>
