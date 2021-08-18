@@ -782,10 +782,10 @@
 				<string></string>
 				<key>MaxKernel</key>
 				<string></string>
-				<key>Enabled</key>
-				<true/>
 				<key>PlistPath</key>
 				<string>Contents/Info.plist</string>
+				<key>Enabled</key>
+				<false/>
 				<key>MinKernel</key>
 				<string></string>
 				<key>ExecutablePath</key>
