@@ -909,7 +909,7 @@
 				<key>MaxKernel</key>
 				<string></string>
 				<key>Enabled</key>
-				<false/>
+				<true/>
 				<key>PlistPath</key>
 				<string>Contents/Info.plist</string>
 				<key>MinKernel</key>
