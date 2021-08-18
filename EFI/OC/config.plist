@@ -80,11 +80,11 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>SSDT-OSYS.aml</string>
+				<string>SSDT-OSYS-GPIO.aml</string>
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
-				<string>SSDT-OSYS.aml</string>
+				<string>SSDT-OSYS-GPIO.aml</string>
 			</dict>
 		</array>
 		<key>Delete</key>
