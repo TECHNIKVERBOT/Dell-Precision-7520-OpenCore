@@ -17,13 +17,22 @@ macOS | Big Sur
 
 ## What works?
 
-- to be determined
+- Audio
+- Battery readout
+- Boot
+- Brightness Control
+- Ethernet
+- GPU acceleration
+- Keyboard + Trackpad
+- Power Management
+- Sleep
+- USB
 
 ## What doesn't work?
 
 - dGPU (no support past High Sierra)
-- TrackPad
-- to be determined
+- Bluetooth (Monterey)
+- Trackpad settings
 
 ## BIOS settings
 
