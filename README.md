@@ -66,3 +66,9 @@ https://user-images.githubusercontent.com/59102649/116117179-3ea51200-a6bc-11eb-
 
 You should also put in your ethernet adapter's MAC address into the ROM section.
 
+## Credits
+
+* [acidanthera](https://github.com/acidanthera) (for OpenCore and the kexts)
+* [dortania](https://dortania.github.io/OpenCore-Install-Guide/) (for their awesome guide)
+* [OpenIntelWireless](https://github.com/OpenIntelWireless) (for Intel WiFi and Bluetooth)
+* [blankmac](https://github.com/blankmac/AlpsHID) (for the APLS I2C TouchPad kext)
