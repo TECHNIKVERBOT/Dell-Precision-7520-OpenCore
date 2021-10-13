@@ -418,6 +418,14 @@
 				<data>AAAwAQ==</data>
 				<key>framebuffer-fbmem</key>
 				<data>AACQAA==</data>
+				<key>enable-backlight-smoother</key>
+				<data>AQAAAA==</data>
+				<key>backlight-smoother-steps</key>
+				<data>IAAAAA==</data>
+				<key>backlight-smoother-interval</key>
+				<data>BAAAAA==</data>
+				<key>backlight-smoother-threshold</key>
+				<data>AAAAAA==</data>
 			</dict>
 		</dict>
 		<key>Delete</key>
