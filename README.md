@@ -13,7 +13,7 @@ iGPU | Intel HD Graphics 530
 dGPU | NVIDIA Quadro M2200 (disabled)
 RAM | 32 GB DDR4
 WiFi | Intel® Dual Band-Wireless-AC 8265
-macOS | Big Sur
+macOS | Monterey
 
 ## What works?
 
