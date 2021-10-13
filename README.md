@@ -32,7 +32,6 @@ macOS | Big Sur
 
 - dGPU (no support past High Sierra)
 - Bluetooth (Monterey)
-- Trackpad settings
 
 ## BIOS settings
 
