@@ -25,6 +25,7 @@ macOS | Monterey
 - GPU acceleration
 - Keyboard + Trackpad
 - Power Management
+- SD card reader
 - Sleep
 - USB
 
