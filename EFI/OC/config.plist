@@ -459,7 +459,7 @@
 				<key>Comment</key>
 				<string>IntelBluetoothFirmware.kext</string>
 				<key>Enabled</key>
-				<true/>
+				<false/>
 				<key>ExecutablePath</key>
 				<string>Contents/MacOS/IntelBluetoothFirmware</string>
 				<key>Arch</key>
@@ -477,7 +477,7 @@
 				<key>Comment</key>
 				<string>IntelBluetoothInjector.kext</string>
 				<key>Enabled</key>
-				<true/>
+				<false/>
 				<key>ExecutablePath</key>
 				<string></string>
 				<key>Arch</key>
@@ -657,7 +657,7 @@
 				<key>Comment</key>
 				<string>BlueToolFixup.kext</string>
 				<key>Enabled</key>
-				<true/>
+				<false/>
 				<key>ExecutablePath</key>
 				<string>Contents/MacOS/BlueToolFixup</string>
 				<key>Arch</key>
