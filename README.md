@@ -38,7 +38,6 @@ macOS | Monterey
 - Bluetooth (Monterey)
 - headphone jack
 - Thunderbolt (untested)
-- Trackpoint buttons
 
 ## BIOS settings
 
