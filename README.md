@@ -28,11 +28,17 @@ macOS | Monterey
 - SD card reader
 - Sleep
 - USB
+- Webcam
+- Speaker
+- Trackpoint
 
 ## What doesn't work?
 
 - dGPU (no support past High Sierra)
 - Bluetooth (Monterey)
+- headphone jack
+- Thunderbolt (untested)
+- Trackpoint buttons
 
 ## BIOS settings
 
