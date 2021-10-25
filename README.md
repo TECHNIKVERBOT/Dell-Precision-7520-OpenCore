@@ -35,7 +35,7 @@ macOS | Monterey
 ## What doesn't work?
 
 - dGPU (no support past High Sierra)
-- Bluetooth (Monterey)
+- Bluetooth
 - headphone jack
 - Thunderbolt (untested)
 
