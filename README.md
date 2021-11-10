@@ -26,6 +26,8 @@ macOS | Monterey
 - Keyboard + Trackpad
 - Power Management
 - SD card reader
+- WiFi
+- Bluetooth
 - Sleep
 - USB
 - Webcam
@@ -35,7 +37,6 @@ macOS | Monterey
 ## What doesn't work?
 
 - dGPU (no support past High Sierra)
-- Bluetooth
 - headphone jack
 - Thunderbolt (untested)
 
