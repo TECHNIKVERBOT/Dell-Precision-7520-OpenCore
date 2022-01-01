@@ -62,6 +62,10 @@ There are two ways you can make a USB installer:
 
 After you have created a bootable Installer, copy the EFI folder to the EFI partition of the installer drive and install as usual (GUID Partiton Map; APFS). After the installation, mount the EFI partition of the installed OS and copy the EFI folder to its partition.
 
+## Running Big Sur
+
+If you want to run Big Sur, you have to replace [AirportItlwm](https://github.com/OpenIntelWireless/itlwm/releases) with the one appropiate to that version of macOS.
+
 ## Generating your own serial and Editing ROM
 
 Use GenSMBIOS (https://github.com/corpnewt/GenSMBIOS) to generate a serial for MacBookPro13,3
