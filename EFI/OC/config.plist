@@ -1536,7 +1536,8 @@
 			<integer>1</integer>
 			<key>AudioSupport</key>
 			<false/>
-
+			<key>DisconnectHda</key>
+			<false/>
 			<key>PlayChime</key>
 			<string>Auto</string>
 			<key>ResetTrafficClass</key>
