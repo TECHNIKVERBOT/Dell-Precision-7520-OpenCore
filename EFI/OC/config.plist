@@ -1406,7 +1406,7 @@
 			<key>SystemSerialNumber</key>
 			<string>ENTER HERE</string>
 			<key>SystemUUID</key>
-			<string>ENTER HERE</string>
+			<string></string>
 		</dict>
 		<key>UpdateDataHub</key>
 		<true/>
