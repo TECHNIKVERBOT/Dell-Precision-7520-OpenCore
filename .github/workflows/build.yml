@@ -13,9 +13,7 @@ jobs:
       - name: Build
         uses: actions/checkout@v3
 
-      - run: TAG_VER=${GITHUB_REF/refs\/tags\/v/}
-      - run: if [[ ${TAG_VER} == refs/heads/* ]]; then TAG_VER=$(date "+%Y-%m-%d"); fi
-      - run: mkdir Output && zip --exclude '*.git*' --exclude '*.github*' --exclude '*Output*' -r -X "Output/${{ github.event.repository.name }}-${TAG_VER}-Skylake.zip" .
+      - run: mkdir Output && zip --exclude '*.git*' --exclude '*.github*' --exclude '*Output*' -r -X "Output/${{ github.event.repository.name }}-${{github.ref_name}}-Skylake.zip" .
 
       - name: Upload to Artifacts
         uses: actions/upload-artifact@v2
@@ -39,14 +37,12 @@ jobs:
       - name: Build
         uses: actions/checkout@v3
       
-      - run: TAG_VER=${GITHUB_REF/refs\/tags\/v/}
-      - run: if [[ ${TAG_VER} == refs/heads/* ]]; then TAG_VER=$(date "+%Y-%m-%d"); fi
       - run: plutil -remove "DeviceProperties"."Add"."PciRoot(0x0)/Pci(0x2,0x0)"."device-id" EFI/OC/config.plist
       - run: plutil -remove "DeviceProperties"."Add"."PciRoot(0x0)/Pci(0x2,0x0)"."framebuffer-fbmem" EFI/OC/config.plist
       - run: plutil -replace "NVRAM"."Add"."7C436110-AB2A-4BBB-A880-FE41995C9F82"."SystemProductName" -string MacBookPro14,3 EFI/OC/config.plist
       - run: plutil -replace "IOKitPersonalities"."TBTU"."model" -string MacBookPro14,3 EFI/OC/Kexts/USBMap.kext/Contents/Info.plist
       - run: plutil -replace "IOKitPersonalities"."XHC"."model" -string MacBookPro14,3 EFI/OC/Kexts/USBMap.kext/Contents/Info.plist
-      - run: mkdir Output && zip --exclude '*.git*' --exclude '*.github*' --exclude '*Output*' -r -X "Output/${{ github.event.repository.name }}-${TAG_VER}-KL.zip" .  
+      - run: mkdir Output && zip --exclude '*.git*' --exclude '*.github*' --exclude '*Output*' -r -X "Output/${{ github.event.repository.name }}-${{github.ref_name}}-KL.zip" .  
 
       - name: Upload to Artifacts
         uses: actions/upload-artifact@v2
