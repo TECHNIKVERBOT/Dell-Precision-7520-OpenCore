@@ -20,4 +20,4 @@ jobs:
           unzip OpenCore-$OC_TAG-RELEASE.zip -d OpenCore
       
       - name: Run ocvalidate
-        run: "./OpenCore/Utilities/ocvalidate EFI/OC/config.plist"
+        run: "./OpenCore/Utilities/ocvalidate/ocvalidate EFI/OC/config.plist"
