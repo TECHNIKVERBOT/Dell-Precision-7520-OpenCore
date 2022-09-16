@@ -40,7 +40,7 @@ jobs:
       - run: plutil -remove "DeviceProperties"."Add"."PciRoot(0x0)/Pci(0x2,0x0)"."device-id" EFI/OC/config.plist
       - run: plutil -remove "DeviceProperties"."Add"."PciRoot(0x0)/Pci(0x2,0x0)"."framebuffer-fbmem" EFI/OC/config.plist
       - run: plutil -replace "NVRAM"."Add"."7C436110-AB2A-4BBB-A880-FE41995C9F82"."SystemProductName" -string MacBookPro14,3 EFI/OC/config.plist
-      - run: plutil -replace "NVRAM"."Add"."7C436110-AB2A-4BBB-A880-FE41995C9F82"."boot-args" -string "-v keepsyms=1 debug=0x100"
+      - run: plutil -replace "NVRAM"."Add"."7C436110-AB2A-4BBB-A880-FE41995C9F82"."boot-args" -string "-v keepsyms=1 debug=0x100" EFI/OC/config.plist
       - run: plutil -replace "IOKitPersonalities"."TBTU"."model" -string MacBookPro14,3 EFI/OC/Kexts/USBMap.kext/Contents/Info.plist
       - run: plutil -replace "IOKitPersonalities"."XHC"."model" -string MacBookPro14,3 EFI/OC/Kexts/USBMap.kext/Contents/Info.plist
       - run: mkdir Output && zip --exclude '*.git*' --exclude '*.github*' --exclude '*Output*' -r -X "Output/${{ github.event.repository.name }}-${{github.ref_name}}-Kaby-Lake.zip" .  
