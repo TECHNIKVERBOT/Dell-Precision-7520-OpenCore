@@ -15,7 +15,7 @@ jobs:
 
       - run: echo "TAG_VER=${GITHUB_REF/refs\/tags\/v/}" >> $GITHUB_ENV
       - run: |
-          if [[ ${TAG_VER} == refs/heads/* ]] then
+          if [ ${TAG_VER} == refs/heads/* ]; then
             echo "TAG_VER=${GITHUB_REF/refs\/tags\/}" >> $GITHUB_ENV
           fi
       - run: mkdir Output && zip --exclude '*.git*' --exclude '*.github*' --exclude '*Output*' -r -X "Output/${{ github.event.repository.name }}-${TAG_VER}-Skylake.zip" .
