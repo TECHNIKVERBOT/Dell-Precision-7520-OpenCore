@@ -1,0 +1,24 @@
+name: ocvalidate
+
+on:
+  push:
+  pull_request:
+  release:
+
+jobs:
+  validate:
+    name: ocvalidate
+    runs-on: macos-latest
+    steps:
+        uses: actions/checkout@v3
+      
+      - name: Get latest OpenCore
+        run: |
+          OC_TAG=tag=$(curl --silent "https://api.github.com/repos/acidanthera/OpenCorePkg/releases/latest" | grep '"tag_name":' | sed -E 's/.*"([^"]+)".*/\1/')
+          curl -L -s "https://github.com/acidanthera/OpenCorePkg/releases/download/$tag/OpenCore-$OC_TAG-RELEASE.zip" -o OpenCore-$OC_TAG-RELEASE.zip
+
+      - name: Unzip OpenCore
+        run: unzip OpenCore-$OC_TAG-RELEASE.zip -d OpenCore
+      
+      - name: Run ocvalidate
+        run: "./OpenCore/Utilities/ocvalidate EFI/OC/config.plist"
