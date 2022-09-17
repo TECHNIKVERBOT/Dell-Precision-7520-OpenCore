@@ -72,7 +72,7 @@ jobs:
       - name: Build
         uses: actions/checkout@v3
 
-      - run: plutil -replace "NVRAM"."Add"."4"."Enabled" -bool NO EFI/OC/config.plist
+      - run: plutil -replace "ACPI"."Add"."4"."Enabled" -bool NO EFI/OC/config.plist
       - run: mkdir Output && zip --exclude '*.git*' --exclude '*.github*' --exclude '*Output*' -r -X "Output/${{ github.event.repository.name }}-${{github.ref_name}}-Skylake (iGPU + AMD).zip" .
 
       - name: Upload to Artifacts
@@ -97,7 +97,7 @@ jobs:
       - name: Build
         uses: actions/checkout@v3
       
-      - run: plutil -replace "NVRAM"."Add"."4"."Enabled" -bool NO EFI/OC/config.plist
+      - run: plutil -replace "ACPI"."Add"."4"."Enabled" -bool NO EFI/OC/config.plist
       - run: plutil -remove "DeviceProperties"."Add"."PciRoot(0x0)/Pci(0x2,0x0)"."device-id" EFI/OC/config.plist
       - run: plutil -remove "DeviceProperties"."Add"."PciRoot(0x0)/Pci(0x2,0x0)"."framebuffer-fbmem" EFI/OC/config.plist
       - run: plutil -replace "NVRAM"."Add"."7C436110-AB2A-4BBB-A880-FE41995C9F82"."SystemProductName" -string MacBookPro14,3 EFI/OC/config.plist
