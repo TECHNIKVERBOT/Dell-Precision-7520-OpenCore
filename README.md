@@ -2,7 +2,7 @@
  
 ### Before you give this EFI a try, make sure you read [this](#Generating-your-own-serial-and-Editing-ROM)!
 
-This repo includes an OpenCore EFI for the Dell Precision 7520 (i7-6820HQ, Skylake) running macOS Ventura Beta.
+This repo includes an OpenCore EFI for the Dell Precision 7520.
 
 Testing on:
 
