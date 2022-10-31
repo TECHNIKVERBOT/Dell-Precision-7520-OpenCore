@@ -1,6 +1,6 @@
 # Dell-Precision-7520-OpenCore
  
-### Before you give this EFI a try, make sure you read [this](#Generating-your-own-serial-and-Editing-ROM)!
+### Before you give this EFI a try, make sure you read [this](#Disabling-CFG-Lock) and [this](#Generating-your-own-serial-and-Editing-ROM)!
 
 This repo includes an OpenCore EFI for the Dell Precision 7520.
 
@@ -56,6 +56,15 @@ Download this repo and place the EFI folder into your internal drive's EFI parti
 1. Have a working install of macOS, [download](https://mrmacintosh.com/macos-ventura-13-full-installer-database-download-directly-from-apple/) the full installer package, install it to get the installer app, then make a bootable Installer with `createinstallmedia` by using this command in Terminal `sudo /Applications/Install\ macOS\ Ventura\ beta.app/Contents/Resources/createinstallmedia --volume /Volumes/NameOfTheUSB`
 
 After you have created a bootable Installer, copy the EFI folder to the EFI partition of the installer drive and install as usual (GUID Partiton Map; APFS). After the installation, mount the EFI partition of the installed OS and copy the EFI folder to its partition.
+
+## Disabling CFG-Lock
+
+In order for macOS to boot at all, you'll need to disable CFG-Lock.
+To do that, boot the EFI, press Space and select modGRUBShell.efi
+
+From there type this command: setup_var 0x4ED 0x00
+
+To confirm CFG-Lock has been disabled, boot back into OpenCore and ControlMsrE2.efi and verify the firmware has an unlocked register present
 
 ## Generating your own serial and Editing ROM
 
