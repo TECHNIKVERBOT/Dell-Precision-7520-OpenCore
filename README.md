@@ -13,7 +13,7 @@ iGPU | Intel HD Graphics 530 (spoofed to HD 630)
 dGPU | NVIDIA Quadro M2200 (disabled)
 RAM | 32 GB DDR4
 WiFi | Intel® Dual Band-Wireless-AC 8265
-macOS | Ventura Beta 5
+macOS | Ventura 13.0
 
 ## What works?
 
