@@ -482,6 +482,12 @@
 				<data>BAAAAA==</data>
 				<key>backlight-smoother-threshold</key>
 				<data>AAAAAA==</data>
+				<key>enable-hdmi20</key>
+				<data>AQAAAA==</data>
+				<key>force-online</key>
+				<data>AQAAAA==</data>
+				<key>enable-hdmi-dividers-fix</key>
+				<data>AQAAAA==</data>
 			</dict>
 		</dict>
 		<key>Delete</key>
