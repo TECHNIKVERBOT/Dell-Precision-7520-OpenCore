@@ -83,7 +83,7 @@ To confirm CFG-Lock has been disabled, boot back into OpenCore and ControlMsrE2.
 
 ## Generating your own serial and Editing ROM
 
-Use GenSMBIOS (https://github.com/corpnewt/GenSMBIOS) to generate a serial for MacBookPro13,3
+Use GenSMBIOS (https://github.com/corpnewt/GenSMBIOS) to generate a serial for MacBookPro13,3 (Skylake) or 14,3 (Kaby Lake)
 
 use Xcode, ProperTree or any decent plist editor to manually enter the details in the following sections of the config (as shown in the video): (SystemSerialNumber, MLB, and UUID)
 
