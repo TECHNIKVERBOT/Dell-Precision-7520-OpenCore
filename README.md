@@ -39,6 +39,7 @@ macOS | Ventura 13.0
 - dGPU (no support past High Sierra)
 - headphone jack
 - Thunderbolt (untested)
+- HDMI
 
 ## BIOS/UEFI settings
 
