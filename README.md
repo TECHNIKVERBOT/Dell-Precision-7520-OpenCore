@@ -57,8 +57,11 @@ Boot the OpenCore EFI, press Space and select modGRUBShell.efi
 From there enter these commands:
 
 setup_var 0x4ED 0x00 (Disable CFG-Lock)
+
 setup_var 0x79A 0x1 (Enable Above 4G Decoding)
+
 setup_var 0x795 0x2 (set DVMT Pre-Allocation to 64MB)
+
 setup_var 0x796 0x3 (set DVMT Total GFX Size to MAX)
 
 ## How to install
