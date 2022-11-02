@@ -124,7 +124,7 @@ jobs:
           tag: ${{ github.ref }}
           file_glob: true
 
-build-skl-igpu-monterey:
+  build-skl-igpu-monterey:
     name: Build (Skylake (iGPU)) (Monterey)
     runs-on: macos-latest
     steps:
@@ -158,7 +158,7 @@ build-skl-igpu-monterey:
           file: Output/*.zip
           tag: ${{ github.ref }}
           file_glob: true
-
+  
   build-kbl-igpu-monterey:
     name: Build (Kaby Lake (iGPU)) (Monterey)
     runs-on: macos-latest
