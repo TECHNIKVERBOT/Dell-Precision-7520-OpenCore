@@ -139,9 +139,9 @@ jobs:
           fileName: "*_Monterey.kext.zip"
 
       # replace Ventura AirportItlwm with Monterey
-      - run: rm -rf OpenCore/EFI/OC/Kexts/AirportItlwm.kext
+      - run: rm -rf EFI/OC/Kexts/AirportItlwm.kext
       - run: unzip *_Monterey.kext.zip
-      - run: mv Monterey/AirportItlwm.kext OpenCore/EFI/OC/Kexts/
+      - run: mv Monterey/AirportItlwm.kext EFI/OC/Kexts/
       - run: mkdir Output && zip --exclude '*.git*' --exclude '*.github*' --exclude '*Output*' -r -X "Output/${{ github.event.repository.name }}-${{github.ref_name}}-Skylake-iGPU.zip" .
 
       - name: Upload to Artifacts
@@ -158,7 +158,7 @@ jobs:
           file: Output/*.zip
           tag: ${{ github.ref }}
           file_glob: true
-  
+
   build-kbl-igpu-monterey:
     name: Build (Kaby Lake (iGPU)) (Monterey)
     runs-on: macos-latest
@@ -174,9 +174,9 @@ jobs:
           fileName: "*_Monterey.kext.zip"
 
       # replace Ventura AirportItlwm with Monterey
-      - run: rm -rf OpenCore/EFI/OC/Kexts/AirportItlwm.kext
+      - run: rm -rf EFI/OC/Kexts/AirportItlwm.kext
       - run: unzip *_Monterey.kext.zip
-      - run: mv Monterey/AirportItlwm.kext OpenCore/EFI/OC/Kexts/
+      - run: mv Monterey/AirportItlwm.kext EFI/OC/Kexts/
 
       - run: mkdir Output && zip --exclude '*.git*' --exclude '*.github*' --exclude '*Output*' -r -X "Output/${{ github.event.repository.name }}-${{github.ref_name}}-Skylake-iGPU.zip" .
       - run: plutil -remove "DeviceProperties"."Add"."PciRoot(0x0)/Pci(0x2,0x0)"."device-id" EFI/OC/config.plist
@@ -221,9 +221,9 @@ jobs:
           fileName: "*_Monterey.kext.zip"
 
       # replace Ventura AirportItlwm with Monterey
-      - run: rm -rf OpenCore/EFI/OC/Kexts/AirportItlwm.kext
+      - run: rm -rf EFI/OC/Kexts/AirportItlwm.kext
       - run: unzip *_Monterey.kext.zip
-      - run: mv Monterey/AirportItlwm.kext OpenCore/EFI/OC/Kexts/
+      - run: mv Monterey/AirportItlwm.kext EFI/OC/Kexts/
       
       - run: plutil -replace "ACPI"."Add"."4"."Enabled" -bool NO EFI/OC/config.plist
       - run: mkdir Output && zip --exclude '*.git*' --exclude '*.github*' --exclude '*Output*' -r -X "Output/${{ github.event.repository.name }}-${{github.ref_name}}-Skylake-iGPU-AMD.zip" .
@@ -258,9 +258,9 @@ jobs:
           fileName: "*_Monterey.kext.zip"
 
       # replace Ventura AirportItlwm with Monterey
-      - run: rm -rf OpenCore/EFI/OC/Kexts/AirportItlwm.kext
+      - run: rm -rf EFI/OC/Kexts/AirportItlwm.kext
       - run: unzip *_Monterey.kext.zip
-      - run: mv Monterey/AirportItlwm.kext OpenCore/EFI/OC/Kexts/
+      - run: mv Monterey/AirportItlwm.kext EFI/OC/Kexts/
       
       - run: plutil -replace "ACPI"."Add"."4"."Enabled" -bool NO EFI/OC/config.plist
       - run: plutil -remove "DeviceProperties"."Add"."PciRoot(0x0)/Pci(0x2,0x0)"."device-id" EFI/OC/config.plist
