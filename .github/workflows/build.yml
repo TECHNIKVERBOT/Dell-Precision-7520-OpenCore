@@ -142,7 +142,7 @@ jobs:
       - run: rm -rf EFI/OC/Kexts/AirportItlwm.kext
       - run: unzip *_Monterey.kext.zip
       - run: mv Monterey/AirportItlwm.kext EFI/OC/Kexts/
-      - run: mkdir Output && zip --exclude '*.git*' --exclude '*.github*' --exclude '*Output*' -r -X "Output/${{ github.event.repository.name }}-${{github.ref_name}}-Skylake-iGPU-Monterey.zip" .
+      - run: mkdir Output && zip --exclude '*_Monterey.kext.zip' --exclude '*Monterey*' --exclude '*.git*' --exclude '*.github*' --exclude '*Output*' -r -X "Output/${{ github.event.repository.name }}-${{github.ref_name}}-Skylake-iGPU-Monterey.zip" .
 
       - name: Upload to Artifacts
         uses: actions/upload-artifact@v3
@@ -188,7 +188,7 @@ jobs:
       - run: plutil -remove "Kernel"."Patch".0 EFI/OC/config.plist
       - run: plutil -replace "IOKitPersonalities"."TBTU"."model" -string MacBookPro14,3 EFI/OC/Kexts/USBMap.kext/Contents/Info.plist
       - run: plutil -replace "IOKitPersonalities"."XHC"."model" -string MacBookPro14,3 EFI/OC/Kexts/USBMap.kext/Contents/Info.plist
-      - run: mkdir Output && zip --exclude '*.git*' --exclude '*.github*' --exclude '*Output*' -r -X "Output/${{ github.event.repository.name }}-${{github.ref_name}}-Kaby-Lake-iGPU-Monterey.zip" .  
+      - run: mkdir Output && zip --exclude '*_Monterey.kext.zip' --exclude '*Monterey*' --exclude --exclude '*Monterey*' '*.git*' --exclude '*.github*' --exclude '*Output*' -r -X "Output/${{ github.event.repository.name }}-${{github.ref_name}}-Kaby-Lake-iGPU-Monterey.zip" .  
 
       - name: Upload to Artifacts
         uses: actions/upload-artifact@v3
@@ -225,7 +225,7 @@ jobs:
       - run: mv Monterey/AirportItlwm.kext EFI/OC/Kexts/
       
       - run: plutil -replace "ACPI"."Add"."4"."Enabled" -bool NO EFI/OC/config.plist
-      - run: mkdir Output && zip --exclude '*.git*' --exclude '*.github*' --exclude '*Output*' -r -X "Output/${{ github.event.repository.name }}-${{github.ref_name}}-Skylake-iGPU-AMD-Monterey.zip" .
+      - run: mkdir Output && zip --exclude '*_Monterey.kext.zip' --exclude '*Monterey*' --exclude '*.git*' --exclude '*.github*' --exclude '*Output*' -r -X "Output/${{ github.event.repository.name }}-${{github.ref_name}}-Skylake-iGPU-AMD-Monterey.zip" .
 
       - name: Upload to Artifacts
         uses: actions/upload-artifact@v2
@@ -272,7 +272,7 @@ jobs:
       - run: plutil -remove "Kernel"."Patch".0 EFI/OC/config.plist
       - run: plutil -replace "IOKitPersonalities"."TBTU"."model" -string MacBookPro14,3 EFI/OC/Kexts/USBMap.kext/Contents/Info.plist
       - run: plutil -replace "IOKitPersonalities"."XHC"."model" -string MacBookPro14,3 EFI/OC/Kexts/USBMap.kext/Contents/Info.plist
-      - run: mkdir Output && zip --exclude '*.git*' --exclude '*.github*' --exclude '*Output*' -r -X "Output/${{ github.event.repository.name }}-${{github.ref_name}}-Kaby-Lake-iGPU-AMD-Monterey.zip" .  
+      - run: mkdir Output && zip --exclude '*_Monterey.kext.zip' --exclude '*Monterey*' --exclude '*.git*' --exclude '*.github*' --exclude '*Output*' -r -X "Output/${{ github.event.repository.name }}-${{github.ref_name}}-Kaby-Lake-iGPU-AMD-Monterey.zip" .  
 
       - name: Upload to Artifacts
         uses: actions/upload-artifact@v3
