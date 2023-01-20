@@ -37,9 +37,9 @@ macOS | Ventura 13.0
 ## What doesn't work?
 
 - dGPU (no support past High Sierra)
-- headphone jack
+- headphone jack (white noise)
 - Thunderbolt (untested)
-- HDMI
+- HDMI (untested)
 
 ## BIOS/UEFI settings
 
@@ -58,8 +58,6 @@ Boot the OpenCore EFI, press Space and select modGRUBShell.efi
 From there enter these commands:
 
 setup_var 0x4ED 0x00 (Disable CFG-Lock)
-
-setup_var 0x79A 0x1 (Enable Above 4G Decoding)
 
 setup_var 0x795 0x2 (set DVMT Pre-Allocation to 64MB)
 
