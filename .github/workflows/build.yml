@@ -43,7 +43,6 @@ jobs:
       - run: plutil -remove "Booter"."Patch".0 EFI/OC/config.plist
       - run: plutil -remove "Kernel"."Patch".0 EFI/OC/config.plist
       - run: plutil -remove "Kernel"."Patch".0 EFI/OC/config.plist
-      - run: plutil -remove "Kernel"."Patch".0 EFI/OC/config.plist
       - run: plutil -replace "IOKitPersonalities"."TBTU"."model" -string MacBookPro14,3 EFI/OC/Kexts/USBMap.kext/Contents/Info.plist
       - run: plutil -replace "IOKitPersonalities"."XHC"."model" -string MacBookPro14,3 EFI/OC/Kexts/USBMap.kext/Contents/Info.plist
       - run: mkdir Output && zip --exclude '*.git*' --exclude '*.github*' --exclude '*Output*' -r -X "Output/${{ github.event.repository.name }}-${{github.ref_name}}-Kaby-Lake-iGPU.zip" .  
