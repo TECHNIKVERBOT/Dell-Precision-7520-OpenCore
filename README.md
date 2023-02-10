@@ -1,6 +1,6 @@
 # Dell-Precision-7520-OpenCore
  
-### Before you give this EFI a try, make sure you read [this](#bios-uefi-settings) and [this](#Generating-your-own-serial-and-Editing-ROM)!
+### Before you give this EFI a try, make sure you read [this](#UEFI-settings) and [this](#Generating-your-own-serial-and-Editing-ROM)!
 
 This repo includes an OpenCore EFI for the Dell Precision 7520.
 
@@ -41,7 +41,7 @@ macOS | Ventura 13.1
 - Thunderbolt (untested)
 - HDMI (untested)
 
-## BIOS/UEFI settings
+## UEFI settings
 
 - Parallel Port: Disabled
 - Serial Port: Enabled
