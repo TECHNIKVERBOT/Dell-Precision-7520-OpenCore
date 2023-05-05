@@ -1,5 +1,7 @@
 # Dell-Precision-7520-OpenCore
- 
+
+## This repository is being deprecated as the owners machine happened to die.
+
 ### Before you give this EFI a try, make sure you read [this](#UEFI-settings) and [this](#Generating-your-own-serial-and-Editing-ROM)!
 
 This repo includes an OpenCore EFI for the Dell Precision 7520.
