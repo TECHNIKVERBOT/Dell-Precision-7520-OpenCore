@@ -13,7 +13,7 @@ iGPU | Intel HD Graphics 530 (spoofed to HD 630)
 dGPU | NVIDIA Quadro M2200 (disabled)
 RAM | 32 GB DDR4
 WiFi | Intel® Dual Band-Wireless-AC 8265
-macOS | Ventura 13.1
+macOS | Ventura 13.5 Beta
 
 ## What works?
 
@@ -40,6 +40,7 @@ macOS | Ventura 13.1
 - headphone jack (white noise)
 - Thunderbolt (untested)
 - HDMI (untested)
+- Bluetooth Audio (untested)
 
 ## UEFI settings
 
