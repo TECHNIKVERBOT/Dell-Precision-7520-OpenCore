@@ -1,7 +1,5 @@
 # Dell-Precision-7520-OpenCore
 
-## This repository is being deprecated as the owners machine happened to die.
-
 ### Before you give this EFI a try, make sure you read [this](#UEFI-settings) and [this](#Generating-your-own-serial-and-Editing-ROM)!
 
 This repo includes an OpenCore EFI for the Dell Precision 7520.
@@ -53,17 +51,6 @@ macOS | Ventura 13.1
 - Secure Boot: Disabled
 - Legacy Option ROM: Disabled
 - Wake on LAN/WLAN: Disabled
-
-You'll also need to set some settings that are hidden from the menu.
-Boot the OpenCore EFI, press Space and select modGRUBShell.efi
-
-From there enter these commands:
-
-setup_var 0x4ED 0x00 (Disable CFG-Lock)
-
-setup_var 0x795 0x2 (set DVMT Pre-Allocation to 64MB)
-
-setup_var 0x796 0x3 (set DVMT Total GFX Size to MAX)
 
 ## How to install
 
