@@ -2,7 +2,7 @@
 
 ### Before you give this EFI a try, make sure you read [this](#UEFI-settings) and [this](#Generating-your-own-serial-and-Editing-ROM)!
 
-This repo includes an OpenCore EFI for the Dell Precision 7520.
+This repo includes an OpenCore EFI for the Dell Precision 7520. For the 7720 and AMD variants, we like to hear feedback [here](https://github.com/TECHNIKVERBOT/Dell-Precision-7520-OpenCore/issues/4).
 
 Testing on:
 
