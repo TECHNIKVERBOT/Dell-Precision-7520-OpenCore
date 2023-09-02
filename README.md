@@ -13,7 +13,7 @@ iGPU | Intel HD Graphics 530 (spoofed to HD 630)
 dGPU | NVIDIA Quadro M2200 (disabled)
 RAM | 32 GB DDR4
 WiFi | Intel® Dual Band-Wireless-AC 8265
-macOS | Ventura 13.5 Beta
+macOS | Sonoma 14.0 Beta
 
 ## What works?
 
@@ -27,7 +27,6 @@ macOS | Ventura 13.5 Beta
 - Power Management
 - SD card reader
 - WiFi
-- Bluetooth
 - Sleep
 - USB
 - Webcam
@@ -40,7 +39,7 @@ macOS | Ventura 13.5 Beta
 - headphone jack (white noise)
 - Thunderbolt (untested)
 - HDMI (untested)
-- Bluetooth Audio (untested)
+- Bluetooth
 
 ## UEFI settings
 
@@ -55,11 +54,11 @@ macOS | Ventura 13.5 Beta
 
 ## How to install
 
-Download this repo and place the EFI folder into your internal drive's EFI partition... That's it.
+Download the latest release and place the EFI folder into your internal drive's EFI partition... That's it.
 
 ## How to Install macOS Ventura
 
-1. Have a working install of macOS, [download](https://mrmacintosh.com/macos-ventura-13-full-installer-database-download-directly-from-apple/) the full installer package, install it to get the installer app, then make a bootable Installer with `createinstallmedia` by using this command in Terminal `sudo /Applications/Install\ macOS\ Ventura.app/Contents/Resources/createinstallmedia --volume /Volumes/NameOfTheUSB`
+Have a working install of macOS, [download](https://mrmacintosh.com/macos-ventura-13-full-installer-database-download-directly-from-apple/) the full installer package, install it to get the installer app, then make a bootable Installer with `createinstallmedia` by using this command in Terminal `sudo /Applications/Install\ macOS\ Ventura.app/Contents/Resources/createinstallmedia --volume /Volumes/NameOfTheUSB`
 
 After you have created a bootable Installer, copy the EFI folder to the EFI partition of the installer drive and install as usual (GUID Partiton Map; APFS). After the installation, mount the EFI partition of the installed OS and copy the EFI folder to its partition.
 
